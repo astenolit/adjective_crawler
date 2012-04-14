@@ -1,5 +1,5 @@
 ## Extracting all adjectives from a given dictionary
-## and saving in a file .txt.
+## and saving them in a file .txt.
 ######################################################
 ##
 ## Enrique Contreras (enconva@gmail.com)
@@ -37,44 +37,4 @@ def take_adjectives (archivo1, archivo2):
     guardar (archivo2,resultado)
 
 take_adjectives ('dictionary.txt','adjectives.txt')
-
-
-
-
-
-
-
-    
-
-                              
-            
-        
-        
-
-
-        
-
-##adjetivos = []
-##palabras = abrir ('dictionary.txt')
-##for n in range (len (palabras)):
-##    if palabras[n] == 'a.':
-##        adjetivos.append (palabras[n-2])
-##
-##adj = ''
-##for e in adjetivos:
-##    adj = adj + ' ' + e
-##
-##adj = adj.lower ()
-##
-##f = open ('adjectives.txt','w')
-##f.write (adj)
-##f.close ()
-
-        
-
-
-
-
-
-
 
