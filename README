@@ -56,12 +56,12 @@ of adjectives to work with. The result is on the file
 
 - The core of the code is the procedure 'adjective_crawler' 
   which takes 4 inputs:
-	* A string 'archivo' 	-> the book in plain .txt format
-	* a string 'cadena' 	-> string to search in the book
-	* an integer 'field' 	-> number of words before and 
+	A string 'archivo' 	-> the book in plain .txt format
+	A string 'cadena' 	-> string to search in the book
+	An integer 'field' 	-> number of words before and 
 				   after the 'cadena' string
 				   to look into.
-	* an integer 'letters'	-> the minimum amount of letters 
+	An integer 'letters'	-> the minimum amount of letters 
 				   have to have each adjective for 
 				   being counted.
 
@@ -99,19 +99,19 @@ The target string: 'Dulcinea del Toboso' appears 34 times in the text.
 In a range of 2 word(s) before and after the targetted string,
 12 adjectives with at least 4 letters have been founded:
 
- 17 times: lady 		3 times: distant
- 2 times: peerless 		2 times: beloved
- 1 times: sovereign 		1 times: sole
- 1 times: often 		1 times: neither
- 1 times: lovely 		1 times: fair
- 1 times: even 		1 times: beautiful
+17 times: lady 		3 times: distant
+2 times: peerless 	2 times: beloved
+1 times: sovereign 	1 times: sole
+1 times: often 		1 times: neither
+1 times: lovely 	1 times: fair
+1 times: even 		1 times: beautiful
 
 #########################################################
 
 According to the above data, we can infer some interesting 
 things:'Dulcinea' was a 'lady', and very beautiful!, because many 
 adjectives related to her are in that semantic field. In addition 
-to that, Dulcina (by the way, she is the cherish lover of 
+to that, Dulcinea (by the way, she is the cherish lover of 
 Don Quixote) is 'distant'; in fact, Quixote hardly met her: she 
 lives in a far away town. If we look up the percentages, we can 
 observe that this character is more relevant in the second third 
