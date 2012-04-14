@@ -178,7 +178,7 @@ def porcentaje (posicion):
     
 ## End of code ##
 
-adjective_crawler ('don_quixote_part_1.txt','Dulcinea',2,4)
+adjective_crawler ('don_quixote_part_1.txt','Dulcinea del Toboso', 2, 4)
 
 
     
