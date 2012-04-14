@@ -2,7 +2,7 @@ Submission
 
 Name Project: Adjective Crawler for Books
 
-The Idea:
+The Idea.
 
 I am a Spanish teacher of Spanish-French Language and Literature in 
 a Secondary School in Madrid (Spain). Since the first moment I was 
@@ -20,7 +20,7 @@ adjective words. It made much more sense looking for the surrounding
 adjectives of a given string.
 
 
-Why it can be useful:
+Why it can be useful.
 
 - Knowing the surrounding adjectives of a given word, or string of 
 words, gives us a glimpse inside the features of a novel character, 
@@ -78,7 +78,7 @@ the range of adjectives. And I've discovered some interesting things:
 searching the string "Dulcinea" for adjectives in a range of 2 words 
 before and after the string, with at least 4 letters each:
 
-adjective_crawler ('don_quixote_part_1.txt','Dulcinea',2,4)
+adjective_crawler ('don_quixote_part_1.txt','Dulcinea del Toboso',2,4)
 
 The code displays:
 
