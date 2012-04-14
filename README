@@ -1,0 +1,130 @@
+Submission
+
+Name Project: Adjective Crawler for Books
+
+The Idea:
+
+I am a Spanish teacher of Spanish-French Language and Literature in 
+a Secondary School in Madrid (Spain). Since the first moment I was 
+engaged in this awesome trip for learning how to write a search engine 
+in Python, I always had in mind the idea of using it in my domain. 
+How about doing a "book crawler" instead of a web one? I thought 
+searching strings in a book and analyzing the results can help in 
+understanding the book itself. The idea was nice and after the final 
+exam, I quickly wrote the code, thanks to all the things I've learned 
+in this awesome course.
+
+But after running it, I realised that the statistic output data was a 
+bit useless. So I decided to change the code for searching only 
+adjective words. It made much more sense looking for the surrounding 
+adjectives of a given string.
+
+
+Why it can be useful:
+
+- Knowing the surrounding adjectives of a given word, or string of 
+words, gives us a glimpse inside the features of a novel character, 
+as well for every given noun. For instance: if we're looking for 
+adjectives surrounding the word 'Spain' in a text and you found 
+many times the adjective 'beautiful', we can infer the narrator, or 
+the writter, has a good view about the country.
+
+- In addition to that, knowing how many times a given string appears 
+and at what position in the text allows us to have an idea about the 
+importance of this character or place; when it appears, disappears, 
+etc. For instance: if we enter  the name 'Dulcinea' -a character 
+from "The Ingenious Gentleman Don Quixote of La Mancha" the classical 
+masterpiece of Miguel de Cervantes (Spain, 1605), we'll discover that 
+she appears mostly in the middle part of the book, not at the 
+beginning nor the end.
+
+- Finally, for statistis purposes, we can know the total number of 
+words of a given book.
+
+
+How it works.
+
+- First, it would be necessary having a comprehensive database of 
+adjectives. Thus, I wrote a code for extracting all the adjectives 
+from a dictionnary. I noticed all the entries are in caps and 
+adjectives are marked, as usual, with 'a.'. Well, I wrote a code 
+inspired of the things I've learned in this course cs101 for 
+extracting only the caps words preceded by 'a.'. This code is 
+also available in the repository. By this way, I have a huge amount 
+of adjectives to work with. The result is on the file 
+"adjectives.txt"
+
+- The core of the code is the procedure 'adjective_crawler' 
+  which takes 4 inputs:
+	* A string 'archivo' 	-> the book in plain .txt format
+	* a string 'cadena' 	-> string to search in the book
+	* an integer 'field' 	-> number of words before and 
+				   after the 'cadena' string
+				   to look into.
+	* an integer 'letters'	-> the minimum amount of letters 
+				   have to have each adjective for 
+				   being counted.
+
+Example.
+
+I chose the classical book "The Ingenious Gentleman Don Quixote 
+of La Mancha" of Miguel de Cervantes Saavedra (Spain, 1547-1616) 
+for mostly 2 reasons: this is the most important masterpiece of 
+the Spanish Literature and also is huge and hard to read! It is 
+composed of 2 books. I chose the first one.
+
+I ran the code with different strings to search and also modified 
+the range of adjectives. And I've discovered some interesting things: 
+searching the string "Dulcinea" for adjectives in a range of 2 words 
+before and after the string, with at least 4 letters each:
+
+adjective_crawler ('don_quixote_part_1.txt','Dulcinea',2,4)
+
+The code displays:
+
+#########################################################
+##             Adjective Crawler for Books             ##
+#########################################################
+
+STATISTICS
+**********
+The file: 'don_quixote_part_1.txt' is composed by 198575 words
+The target string: 'Dulcinea del Toboso' appears 34 times in the text.
+	11 times in the first third of the text (32.35%)
+	19 times in the second third of the text (55.88%)
+	4 times in the third third of the text (11.76%)
+
+#########################################################
+
+In a range of 2 word(s) before and after the targetted string,
+12 adjectives with at least 4 letters have been founded:
+
+ 17 times: lady 		3 times: distant
+ 2 times: peerless 		2 times: beloved
+ 1 times: sovereign 		1 times: sole
+ 1 times: often 		1 times: neither
+ 1 times: lovely 		1 times: fair
+ 1 times: even 		1 times: beautiful
+
+#########################################################
+
+According to the above data, we can infer some interesting 
+things:'Dulcinea' was a 'lady', and very beautiful!, because many 
+adjectives related to her are in that semantic field. In addition 
+to that, Dulcina (by the way, she is the cherish lover of 
+Don Quixote) is 'distant'; in fact, Quixote hardly met her: she 
+lives in a far away town. If we look up the percentages, we can 
+observe that this character is more relevant in the second third 
+of the book. But at the end of the book, Dulcinea hardly appears.
+
+And we can get all this data even without reading the whole book!
+
+
+I hope this simple code will be useful for linguistic and for 
+students as well.
+
+Thank you Udacity for all the things I've learnt.
+I'll try to stay udacious too. 
+
+Enrique Contreras (astenolit)
+enconva@gmail.com
